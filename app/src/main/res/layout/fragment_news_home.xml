@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.NewsHomeFragment">
+
+
+  <FrameLayout
+      android:id="@+id/loadingFrame"
+      android:visibility="visible"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <ProgressBar
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          />
+
+  </FrameLayout>
+
+  <FrameLayout
+      android:id="@+id/error_Frame"
+      android:layout_width="wrap_content"
+      android:layout_gravity="center"
+      android:visibility="visible"
+      android:layout_height="wrap_content">
+
+      <LinearLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:orientation="vertical">
+
+          <ImageView
+              android:layout_width="140dp"
+              android:layout_height="140dp"
+              android:layout_gravity="center_horizontal"
+              android:src="@drawable/ic_error_outline_black_24dp"
+              />
+
+          <TextView
+              android:id="@+id/errText"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:typeface="sans"
+              android:textStyle="bold"
+              android:textSize="19dp"
+              android:textColor="#000"
+              android:layout_gravity="center_horizontal"
+              android:gravity="center_horizontal"
+              android:layout_marginTop="10dp"
+              android:text="@string/went_wrong"
+              />
+
+
+      </LinearLayout>
+
+  </FrameLayout>
+
+  <android.support.v7.widget.RecyclerView
+      android:id="@+id/newsRecyclerView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:visibility="invisible"
+      >
+
+
+  </android.support.v7.widget.RecyclerView>
+
+</FrameLayout>

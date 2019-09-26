@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.design.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_appbar"
+        app:theme="@style/AppTheme.AppBarOverlay">
+
+
+
+        <android.support.v7.widget.Toolbar android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:title="@string/app_name"
+            android:id="@+id/toolbar_layout_id"
+            app:theme="@style/AppTheme.AppBarOverlay"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        </android.support.v7.widget.Toolbar>
+
+
+        <RelativeLayout
+            android:id="@+id/news_filter_pallete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:visibility="visible"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/NewsBAR_layout">
+
+                <!-- android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"-->
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#ffffff"
+                    android:layout_marginRight="3dp"
+                    android:id="@+id/timetab_layout">
+
+
+
+                    <Spinner
+                        style="@style/spinner_stylefortimtab"
+                        android:layout_width="150dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/spinner_newsType"
+                        />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="#777"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_toRightOf="@id/timetab_layout"
+                    android:id="@+id/verticalbar2"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="#ffffff"
+                    android:layout_marginRight="3dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_toRightOf="@id/verticalbar2">
+
+                    <Spinner
+                        style="@style/spinner_stylefortimtab"
+                        android:layout_width="133dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/spinner_newsGenre" />
+
+                </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.NewsHomeActivity">
+
+
+
+
+    <FrameLayout
+        android:id="@+id/newsFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="5dp"
+        android:background="#ededed"
+        android:layout_above="@+id/navigation">
+
+    </FrameLayout>
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground"
+        android:theme="@style/AppTheme"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/news_home_bottom_navigation" />
+
+</RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
