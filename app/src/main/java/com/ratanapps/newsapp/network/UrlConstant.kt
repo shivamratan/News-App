@@ -13,6 +13,8 @@ class UrlConstant {
         const val FAV_NEWS_REDIRECTION = "fav_news_redirection"
         const val HOME_NEWS_REDIRECTION = "home_news_redirection"
 
+
+        //PASTE HERE YOUR GENERATED API KEY FROM THE NEWS API WEBSITE
         const val API_KEY ="************************************"
 
     }
