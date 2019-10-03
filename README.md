@@ -26,10 +26,10 @@ The News app for daily news & trending news for different country filter using M
 
 ### Library reference resources:
 1. Data binding: https://developer.android.com/topic/libraries/data-binding/
-2. Dagger2:  https://dagger.dev/users-guide (Documentation)
-             https://github.com/shivamratan/mvvm-architecture (Sample) <br>
-3. RxJava2: http://reactivex.io/documentation (Documentation)
-            https://github.com/shivamratan/mvvm-architecture (Sample)  <br>
+2. Dagger2:  https://dagger.dev/users-guide (Documentation) <br>
+             https://github.com/shivamratan/mvvm-architecture (Sample)
+3. RxJava2: http://reactivex.io/documentation (Documentation)<br>
+            https://github.com/shivamratan/mvvm-architecture (Sample)  
 4. MVVM architecture: https://github.com/shivamratan/mvvm-architecture
 5. Retrofit: https://square.github.io/retrofit/
 6. ViewModel: https://developer.android.com/topic/libraries/architecture/viewmodel
